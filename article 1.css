@@ -1,0 +1,41 @@
+.spine {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.spine>div {
+    flex: 25%;
+    max-width: 25%;
+}
+
+.spine>div a {
+    margin: 20px auto;
+    width: 90%;
+    padding-top: 127.21886%;
+    background-image: url('/res/images/static/articles/default.png');
+    background-origin: border-box;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 0 14px 7px rgba(0, 0, 0, .1);
+    transition: .4s;
+    transition-property: box-shadow;
+}
+
+.spine>div a:hover {
+    box-shadow: 0 0 16px 8px rgba(0, 0, 0, .15);
+}
+
+@media (max-width: 920px) {
+    .spine>div {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 450px) {
+    .spine>div {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
